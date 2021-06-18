@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Document</title>
+    
+</head>
+<style>
+ @media (min-width:992px) {
+   
+
+  img {
+ 
+	background-repeat: no-repeat;
+  background-size: auto;
+  background-size:100% 100%;
+
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.navbar{
+  background-color:transparent;
+
+  float: right;
+  display: flex;
+  padding-left: 10%;
+  margin-right: 10%;
+  /* background:url('dallas-reedy-H83_BXx3ChY-unsplash.jpg')   ;	background-repeat: no-repeat;
+    
+    background-size:100% 100%; z-index: -1; padding: 0%; margin-top: 2%; margin-right: 5% ; opacity: 90%; border-radius: 50%;
+   filter: opacity(50); */
+}
+a{
+  font-family: "Brush Script MT ";
+  color: rgb(237, 237, 250);
+  
+ 
+}
+ 
+ .dd{
+  background-repeat: no-repeat;
+    
+    z-index: -1; padding: 0%; margin-top: 2%; margin-right: 0% ; opacity: 40%; border-radius: 50%;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    float: right;
+    position:absolute;
+    margin-left: 30%;
+
+
+ }
+ }
+ @media (max-width:991px) {
+  img {
+ 
+ background-repeat: no-repeat;
+ background-size: auto;
+ background-size:100% 100%;
+ -webkit-filter: brightness(1);
+
+filter: brightness(1);
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ z-index: -1;
+}
+.navbar{
+ background-color:transparent;
+ z-index: -1;
+float: right;
+ display: flex;
+ padding-left: 10%;
+ margin-right: 10%;
+/* 
+ background:url('dallas-reedy-H83_BXx3ChY-unsplash.jpg')   ;	background-repeat: no-repeat;
+   
+  z-index: -1; padding: 0%; margin-top: 2%; margin-right: 5% ; opacity: 90%; border-radius: 50%;
+  filter: opacity(50); */
+}
+
+
+.navbar ul li{
+  background-color: blanchedalmond;
+}
+.navbar-toggler-icon{
+  background: rgb(10, 14, 209);
+  
+}
+   
+ }
+
+</style>
+<body >
+  <div style="display: flex; ">
+  <img src="./static/glenn-carstens-peters-IMRuLuNnFw4-unsplash.jpg" alt="">
+    <nav class="navbar navbar-expand-lg " style="margin-left: 50%;">
+      <img src="./static/dallas-reedy-H83_BXx3ChY-unsplash.jpg" alt="" class="dd">
+        <div class="container-fluid gg" >
+         
+          
+          <a class="navbar-brand font-effect-shadow-multiple"  style="padding-top : 3%; font-family: Abril Fatface; font-size: 30px; margin-left: 10%;" href="/">PlantSempiternal</a>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"  ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a style="color: rgb(254, 254, 255);  font-family: Regular 400;  font-size: 27px; margin-left: 5%; padding-top: 25%; " class="nav-link active font-effect-fire" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link font-effect-fire" style="color: rgb(250, 251, 252); font-family: Regular 400;    padding-top: 25%; font-size: 27px; margin-left: 10%; "  href="/about">About </a>
+              </li>
+              <li class="nav-item font-effect-emboss">
+                <a style="color:rgb(247, 250, 253);  font-family: Regular 400;    font-size: 27px; margin-left: 10%; padding-top: 20%;" class="nav-link font-effect-fire" href="#">ChatBot</a>
+              </li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+     
+    </div>
+    {% block body %}
+
+    {% endblock body %}
+</body>
+</html>

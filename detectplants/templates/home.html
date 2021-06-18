@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<style>
+.kl{
+    margin-top: 10%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Regular 400'  ;
+
+
+}
+input[type=file]{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+#inputGroupFile04{
+    width: 40%;
+}
+.input-group{
+    width: 40%;
+display: flex;
+justify-content:center;
+margin-left: 30%;
+}
+</style>
+<div class="kl">
+<h1 class="font-effect-emboss">Upload an Image</h1>
+<form method="POST" action="">
+     {% csrf_token %} 
+<div class="input-group">
+    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" name="image"   input aria-label="Upload">
+    <button type="submit" class="btn btn-outline-secondary" style="color: rgb(17, 1, 1); font-family:  'Brush Script MT';" type="button" id="inputGroupFileAddon04">Examine</button>
+  </div>
+</form>
+</div>
+
+
+
+{% if Symptoms %}
+
+<h1>Symptoms</h1>
+<p>{{Symptoms}}</p>  
+
+<h1>Treatment</h1>
+<p>{{Treatment}}</p>  
+
+<h1>Disease_name</h1>
+<p>{{Disease_name}}</p>  
+{% endif %}
+
+{% endblock body %}
