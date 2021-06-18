@@ -1,0 +1,9 @@
+  applications:
+  - name: PlantSempiternal
+    random-route: true
+    memory: 256M
+     buildpack: 
+    https://github.com/cloudfoundry/hwc-buildpack.git
+  env:
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
